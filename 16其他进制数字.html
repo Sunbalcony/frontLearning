@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        /*
+         JS中需要表示16进制的数字，则需要0x开头
+         8进制数字，需要以0o开头
+         2进制数字，0b开头
+         */
+        a = 0x10;
+        b = 0xff;
+        a = 0xCafe;
+
+
+        aa = 0o70;
+
+        aaa = 0b10;
+
+        console.log(a)//输出为十进制
+
+        /*
+        parseInt()中可以传递第二个参数，来代表转换的进制数
+         */
+
+        aaaa = parseInt(aaa, 10)
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

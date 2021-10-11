@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        /*
+        将一个数据类型强制转换成其他的数据类型
+        String Number
+        方式1：
+            调用被转换类型的toString()
+            xxx.toString()
+            该方法不会影响原变量 他会将转换的结果返回
+            Null和Undefined没有.toString方法
+        方式2：
+            调用String()传参
+         */
+
+        var a = 123;
+
+        var b = a.toString();
+        console.log(typeof b)
+
+
+        var c = String(a);
+        console.log(typeof c)
+
+        /*
+        字符串转Number
+        Number()
+        字符串->数字
+            1 如果是纯数字字符串，则直接将其转换为数字
+            2 如果字符串中包含有非数字的内容，则转换为NaN
+            3 空字符串转为换数组0
+            4 true转换为1
+            5 false转为0
+            6 Undefined转换为NaN
+
+         */
+
+        /*
+        转换方式二：
+            a = 123px;
+            专门用来对付字符串
+            parseInt() 把一个字符串转换为整数
+            parseFloat() 把一个字符串转换为小数
+            原理：
+                从左往右依次读，只到第一个不为数字的字符停止；
+                小数位也不会取，只会取整数
+
+         */
+        var x = "123px";
+        x = parseInt(x)
+        console.log(typeof x);
+        console.log(x);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
