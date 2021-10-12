@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        /*
+        自增:++
+            再自身的基础上增加1
+            分为两种 a++ 和 ++a
+            无论是那种++ 都会立即使原变量的值立即自增1
+
+            不同的是a++和++a的值不同
+            a++的值等于原变量的值（自增前的值）
+            ++a的值等于原变新值 （自增后的值）
+
+         */
+        var a = 1;
+        a++;
+
+        var d = 20;
+        var result = d++ + ++d + d;
+        /*
+        d++ 的值为20
+        d++完成后d的值为21
+        d的基础上进行++d的值为22
+        因此
+        20 +22 +22 = 64
+         */
+        console.log("result = " + result)
+        /*
+        自减：--
+        自减也分为两种 a--和--a
+        无论是那种-- 都会立即使原变量的值立即自增1
+
+         */
+    </script>
+</head>
+<body>
+
+</body>
+</html>

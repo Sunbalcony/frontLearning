@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>逻辑运算符</title>
+    <script>
+        /*
+        JS中三种逻辑运算符
+        与是找false
+        或是找true
+
+        ! 非：
+        true变false
+        false 变true
+
+        && 与
+
+        || 或
+         */
+        var a = true;
+        a = !a;
+        console.log(a)
+
+
+        /*
+        非布尔值情况
+
+        会将其先转换为布尔值再进行运算，并且返回原值
+
+         */
+        var result = 1 && 2;
+        //如果两个值都为true 则返回后面的一个
+        var result = 0 && 2;
+        //返回0
+        var result = NaN && 0;
+        //两个值都为false 则返回靠前的false
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
