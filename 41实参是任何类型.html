@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实参可以是任何类型</title>
+    <script>
+
+        function isOu(num) {
+            return num % 2 === 0;
+        }
+
+        /*
+        实参可以是任意数据类型，也可以是对象
+        当参数过多时 可以将参数封装到对象中 然后通过对象传递
+         */
+        var obj = {
+            name: "孙悟空",
+            age: 18,
+            gender: "男",
+            address: "花果山"
+        }
+
+        function sayHello(o) {
+            console.log(o.name, o.age, o.gender, o.address);
+
+        }
+
+        sayHello(obj)
+
+        /*
+        实参可以是一个对象
+        实参也可以是一个函数
+         */
+        function fun2(a) {
+            console.log("a = " + a);
+
+        }
+
+        fun2(sayHello);
+
+        /*
+        将一个函数作为实参传递给一个函数
+
+         */
+        fun2(function () {
+            console.log("213");
+
+        })
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
